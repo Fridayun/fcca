@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Productos - PetFriends</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="estilos.css" rel="stylesheet" type="text/css">
+  <style>
+    .productos_section {
+      margin: 40px 0;
+    }
+
+    .productos_grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 30px;
+      padding: 20px;
+    }
+
+    .producto_card {
+      background: #FFF1D0;
+      border-radius: 16px;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease, box-shadow 0.3s ease;
+    }
+
+    .producto_card:hover {
+      transform: translateY(-5px);
+      box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+    }
+
+    .producto_card img {
+      width: 100%;
+      max-width: 150px;
+      border-radius: 10px;
+      margin-bottom: 15px;
+    }
+
+    .producto_card h4 {
+      color: #4B3F72;
+      margin: 10px 0 5px;
+    }
+
+    .producto_card p {
+      font-size: 16px;
+      color: #555;
+      margin: 0;
+    }
+
+    .producto_precio {
+      font-weight: bold;
+      color: #4B3F72;
+      margin-top: 8px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <div class="primary_header">
+        <h1 class="title">🐾 PETFRIENDS – Accesorios para Mascotas 🐾</h1>
+      </div>
+      <nav class="secondary_header" id="menu">
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="quienes.html">QUIÉNES SOMOS</a></li>
+          <li><a href="productos.html">PRODUCTOS</a></li>
+          <li><a href="contacto.html">CONTÁCTANOS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section class="productos_section">
+      <h3 style="text-align:center; color:#4B3F72;">Nuestros Productos Estrella</h3>
+
+      <div class="productos_grid">
+        <div class="producto_card">
+          <img src="img/Juguete.jpg" alt="Juguete interactivo">
+          <h4>Juguete interactivo</h4>
+          <p>Ideal para horas de diversión</p>
+          <p class="producto_precio">$150</p>
+        </div>
+
+        <div class="producto_card">
+          <img src="img/correa.jpg" alt="Correa reforzada">
+          <h4>Correa reforzada</h4>
+          <p>Seguridad y estilo en cada paseo</p>
+          <p class="producto_precio">$180</p>
+        </div>
+
+        <div class="producto_card">
+          <img src="img/Doggielounge Velvet.jpg" alt="Cama acolchada">
+          <h4>Cama acolchada</h4>
+          <p>Comodidad para dulces sueños</p>
+          <p class="producto_precio">$350</p>
+        </div>
+
+        <div class="producto_card">
+          <img src="img/accesorios.jpg" alt="Casa para gato">
+          <h4>Casa para gato</h4>
+          <p>Un refugio acogedor y elegante</p>
+          <p class="producto_precio">$420</p>
+        </div>
+
+        <div class="producto_card">
+          <img src="img/jugetes.jpg" alt="Pecera decorativa">
+          <h4>Pecera decorativa</h4>
+          <p>Estilo y bienestar para tus peces</p>
+          <p class="producto_precio">$600</p>
+        </div>
+
+        <div class="producto_card">
+          <img src="img/transportadora.jpg" alt="Transportadora mediana">
+          <h4>Transportadora mediana</h4>
+          <p>Viajes cómodos y seguros</p>
+          <p class="producto_precio">$520</p>
+        </div>
+      </div>
+    </section>
+
+    <footer class="secondary_header footer">
+      <div class="copyright">
+        ©2024 – Desarrolladores: Paola Landa | Farid Silva | Frida Rivera 🐶
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>

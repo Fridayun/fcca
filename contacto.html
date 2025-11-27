@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <title>Contáctanos - PetFriends</title>
+  <style>
+    
+    body {
+      font-family: Arial, sans-serif;
+      margin: 0;
+      background: #FDF6F0;
+    }
+
+    .container {
+      width: 95%;
+      margin: auto;
+    }
+
+    
+    .primary_header {
+      background: #D9C7F1;
+      padding: 20px;
+      text-align: center;
+    }
+
+    .title {
+      color: #4B3F72;
+      margin: 0;
+    }
+
+    
+    .secondary_header ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      background: #C3E8F4;
+      text-align: center;
+    }
+
+    .secondary_header ul li {
+      display: inline-block;
+    }
+
+    .secondary_header ul li a {
+      color: #434343;
+      text-decoration: none;
+      padding: 15px 25px;
+      display: inline-block;
+      font-weight: bold;
+      transition: background 0.3s, color 0.3s;
+    }
+
+    .secondary_header ul li a:hover {
+      background: #9ED9EB;
+      border-radius: 5px;
+      color: #2C2C2C;
+    }
+
+    
+    section h3 {
+      font-size: 28px;
+      color: #4B3F72;
+      text-align: center;
+      margin-top: 30px;
+    }
+
+    form {
+      width: 55%;
+      margin: 25px auto;
+      background: #FFF1D0;
+      padding: 30px 35px;
+      border-radius: 16px;
+      box-shadow: 0 5px 18px rgba(0,0,0,0.15);
+      font-size: 18px;
+      display: flex;
+      flex-direction: column;
+      gap: 18px;
+    }
+
+    form label {
+      font-weight: bold;
+      color: #4B3F72;
+    }
+
+    form input,
+    form select {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: 2px solid #E6D7FF;
+      background: #FFFFFF;
+      font-size: 16px;
+      transition: 0.25s ease;
+    }
+
+    form input:focus,
+    form select:focus {
+      border-color: #C4A4F7;
+      background: #F6F1FF;
+      transform: scale(1.02);
+    }
+
+    .botones {
+      display: flex;
+      justify-content: space-between;
+      gap: 10px;
+      margin-top: 10px;
+    }
+
+    .btn_enviar,
+    .btn_borrar {
+      width: 100%;
+      padding: 12px;
+      border-radius: 10px;
+      border: none;
+      font-size: 18px;
+      cursor: pointer;
+      transition: 0.3s;
+    }
+
+    .btn_enviar {
+      background: #A4D8A4;
+    }
+
+    .btn_enviar:hover {
+      background: #8ACE88;
+      transform: scale(1.05);
+    }
+
+    .btn_borrar {
+      background: #F4A6A6;
+    }
+
+    .btn_borrar:hover {
+      background: #F08E8E;
+      transform: scale(1.05);
+    }
+
+    
+    img {
+      transition: transform 0.3s ease, filter 0.3s ease;
+      border-radius: 10px;
+      max-width: 100%;
+      height: auto;
+    }
+
+    img:hover {
+      transform: scale(1.05);
+      filter: brightness(1.1);
+    }
+
+    
+    .footer {
+      background: #D9C7F1;
+      padding: 15px;
+      text-align: center;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container">
+
+    <header>
+      <div class="primary_header">
+        <h1 class="title">PETFRIENDS – Accesorios para Mascotas</h1>
+      </div>
+
+      <nav class="secondary_header" id="menu">
+        <ul>
+          <li><a href="index.html">INICIO</a></li>
+          <li><a href="quienes.html">QUIÉNES SOMOS</a></li>
+          <li><a href="productos.html">PRODUCTOS</a></li>
+          <li><a href="contacto.html">CONTÁCTANOS</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <section>
+      <h3>Formulario de Contacto</h3>
+
+      <form>
+        <label for="nombre">Nombre del cliente:</label>
+        <input type="text" id="nombre" placeholder="Escribe tu nombre">
+
+        <label for="celular">Celular:</label>
+        <input type="tel" id="celular" placeholder="Número">
+
+        <label for="mail">Mail:</label>
+        <input type="email" id="mail" placeholder="correo@ejemplo.com">
+
+        <label for="producto">Tipo de producto o servicio:</label>
+        <input type="text" id="producto" placeholder="Producto que deseas">
+
+        <label for="cantidad">Cantidad:</label>
+        <input type="number" id="cantidad" min="1" placeholder="Cantidad">
+
+        <label for="pago">Forma de pago:</label>
+        <select id="pago">
+          <option>Tarjeta</option>
+          <option>Depósito</option>
+          <option>Pago en Oxxo</option>
+        </select>
+
+        <div class="botones">
+          <button type="submit" class="btn_enviar">Enviar</button>
+          <button type="reset" class="btn_borrar">Borrar</button>
+        </div>
+      </form>
+    </section>
+
+    <footer class="secondary_header footer">
+      <div class="copyright">
+        ©2025 – Desarrolladores: Paola Landa | Farid Silva | Frida Rivera 
+      </div>
+    </footer>
+
+  </div>
+</body>
+</html>
